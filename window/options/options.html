@@ -1,0 +1,179 @@
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <link rel="stylesheet" type="text/css" media="all" href="/options/options.css" />
+	</head>
+	<body>
+		<header>
+			<div class="icon"></div>
+			<div class="text">Options des notifications de la bbox.</div>
+		</header>
+		<div class="spacer-hz"></div>
+		<br>
+		<div class="block">
+			<div class="size-25">Activer les notifications pour les services suivants: </div>
+			<br>
+			<div class="item-100" id="div-error">
+				<div class="cb-container">
+					<div class="cb">
+					    <input type="checkbox" value="1" id="error" >
+					    <label for="error"></label>
+					</div>
+					<div class="cb-label">
+						Erreurs
+					</div>
+				</div>
+			</div>
+			<div class="margin-32">
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="display" >
+						    <label for="display"></label>
+						</div>
+						<div class="cb-label">
+							Changement d'état
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item-100" id="div-event">
+				<div class="cb-container">
+					<div class="cb">
+					    <input type="checkbox" value="1" id="event" >
+					    <label for="event"></label>
+					</div>
+					<div class="cb-label">
+						Evènements
+					</div>
+				</div>
+			</div>
+			<div class="margin-32">
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="wireless" >
+						    <label for="wireless"></label>
+						</div>
+						<div class="cb-label">
+							WiFi
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="voip" >
+						    <label for="voip"></label>
+						</div>
+						<div class="cb-label">
+							Téléphonie
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="hosts" >
+						    <label for="hosts"></label>
+						</div>
+						<div class="cb-label">
+							Périphériques WiFi et ethernet
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="service" >
+						    <label for="service"></label>
+						</div>
+						<div class="cb-label">
+							Services (Pare-feu, redirection de ports ...)
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="usb" >
+						    <label for="usb"></label>
+						</div>
+						<div class="cb-label">
+							USB
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="printer" >
+						    <label for="printer"></label>
+						</div>
+						<div class="cb-label">
+							Imprimante
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="iptv" >
+						    <label for="iptv"></label>
+						</div>
+						<div class="cb-label">
+							IpTV
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="mydevice" >
+						    <label for="mydevice"></label>
+						</div>
+						<div class="cb-label">
+							Notification à propos de l'appareil courant.
+							<div class="inline-block">Couleur du fond: <input type="text" id="mydeviceBG">
+							Couleur de la police: <input type="text" id="mydeviceColor"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item-100">
+					<div class="cb-container">
+						<div class="cb">
+						    <input type="checkbox" value="1" id="otherdevice" >
+						    <label for="otherdevice"></label>
+						</div>
+						<div class="cb-label">
+							Notification à propos des autres appareils.
+							<div class="inline-block">Couleur du fond: <input type="text" id="otherdeviceBG">
+							Couleur de la police: <input type="text" id="otherdeviceColor"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="block">
+			<div>
+				Récupérer les informations toutes les <input type="text" id='refresh'> seconde(s).
+			</div>
+			<div>
+				Récupérer les informations de test (Ping, DNS, HTTP) toutes les <input type="text" id='refreshTest'> minute(s).
+			</div>
+			<div>
+				Récupérer les informations sur le RSSI des périphériques WiFi toutes les <input type="text" id='refreshWifi'> minute(s).
+			</div>
+			<div>
+				Adresse de la bbox: <input type="text" id='address'>
+			</div>
+		</div>
+		<div class="actions">
+            <div class="btn-container btn-submit">
+                <div class="cta-1" id="submit">Appliquer</div>
+            </div>
+        </div>
+		<script src="/options/options.js"></script>
+	</body>
+</html>

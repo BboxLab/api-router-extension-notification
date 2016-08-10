@@ -1,0 +1,168 @@
+header .icon {
+	background: url(../logo-bbox-48.png) center center no-repeat;
+	background-size: contain;
+    width: 32px;
+    height: 32px;
+}
+
+header div {
+	display: inline-block;
+}
+
+header .text {
+	font-size: 32px;
+    vertical-align: top;
+}
+
+.cb {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+.cb label {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ececec;
+    border-radius: 3px;
+}
+.cb label:after {
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    background: url("cb-check.svg") 50% 50% no-repeat;
+    background-size: contain;
+    content: '';
+    opacity: 0;
+}
+.cb label:hover::after {
+    opacity: 0.2;
+}
+.cb input[type=checkbox] {
+    visibility: hidden;
+}
+.cb input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+.cb input[type=checkbox]:disabled + label:after {
+    opacity: 0;
+}
+
+.cb-container {
+	display: inline-block;
+    position: relative;
+    text-align: left;
+    min-height: 40px;
+    line-height: 40px;
+    width: 100%;
+    padding: 0 0 0 40px;
+}
+
+.cb-label {
+    display: inline-block;
+    font-family: 'open_sansregular', Arial, sans-serif;
+    font-size: 20px;
+    color: #454545;
+    line-height: 32px;
+    position: relative;
+}
+
+.item-100 {
+	width: 100%;
+}
+
+.size-25 {
+	font-size: 25px;
+}
+
+.spacer-hz {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 1px;
+    background: #ffffff;
+}
+
+body {
+	background-color: #ededed;
+}
+
+.block {
+	background-color: white;
+	padding: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    font-size: 20px;
+}
+
+#otherdeviceBG,
+#otherdeviceColor,
+#mydeviceBG,
+#mydeviceColor,
+#refreshWifi,
+#refreshTest,
+#refresh {
+	width: 60px;
+	vertical-align: middle;
+}
+
+.btn-container.btn-submit {
+    display: inline-block;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+.cta-1 {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    border-radius: 3px;
+    line-height: 40px;
+    font-family:  'open_sanssemibold', Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 200ms;
+}
+.cta-1 {
+    padding: 0px 60px;
+    text-align: center;
+    color: #ffffff;
+    background: #0065a6;
+    border: 1px solid #0065a6;
+}
+.cta-1:hover,
+.cta-1:active {
+    background: none;
+    color: #0065a6;
+}
+.cta-1:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    height: 48px;
+    width: 32px;
+    color: #ededed;
+    font-size: 24px;
+}
+.cta-1:hover:before {
+    color: #0065a6;
+}
+
+.inline-block {
+	display: inline-block; !important
+}
+
+.margin-32 {
+	margin-left: 32px;
+}

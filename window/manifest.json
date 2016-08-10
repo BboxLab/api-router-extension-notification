@@ -1,0 +1,35 @@
+{
+	"name":"Notification",
+	"version":"1.0",
+	"manifest_version": 2,
+	"description":"Notifie l'utilisateur des évènements liés à la bbox",
+	"permissions": [
+	    "tabs",
+	    "<all_urls>"
+	],
+    "background": {
+        "scripts": [
+        	"messages.js",
+            "background.js"
+        ]
+    },
+	"content_scripts": [
+	    {
+	     "matches":  ["<all_urls>"],
+	      "js": ["alertify.min.js"],
+	      "css": ["alertify.default.css", "alertify.core.css"],
+	      "run_at": "document_end"
+	    }
+	],
+	"web_accessible_resources": ["logo-bbox.png"],
+ 	"options_page": "options/options.html",
+     "browser_action":
+	{
+		"default_icon": "logo-bbox-48.png"
+	},
+	"icons": {
+		"16": "logo-bbox-16.png",
+       	"48": "logo-bbox-48.png",
+        "128": "logo-bbox-128.png"
+	}
+}
